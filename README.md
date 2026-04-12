@@ -51,10 +51,10 @@ Structured JSON Response
 <img width="1307" height="640" alt="Screenshot 2026-04-11 at 7 23 59 PM" src="https://github.com/user-attachments/assets/55a4a395-bd8c-4b4f-a199-52982fbb2829" />
 
 ### Model Deployment
-<img width="1467" height="744" alt="Screenshot 2026-04-11 at 7 24 18 PM" src="https://github.com/user-attachments/assets/6a8c4098-7230-4fd4-aaf5-2f5dd55c8261" />
+<img width="1466" height="706" alt="Screenshot 2026-04-11 at 7 19 44 PM" src="https://github.com/user-attachments/assets/c94a252e-1aab-42ec-8407-5dfc47d3ffd6" />
 
 ### Model Details
-<img width="1466" height="706" alt="Screenshot 2026-04-11 at 7 19 44 PM" src="https://github.com/user-attachments/assets/c94a252e-1aab-42ec-8407-5dfc47d3ffd6" />
+<img width="1467" height="744" alt="Screenshot 2026-04-11 at 7 24 18 PM" src="https://github.com/user-attachments/assets/6a8c4098-7230-4fd4-aaf5-2f5dd55c8261" />
 
 ## 🚀 How to Run
 
