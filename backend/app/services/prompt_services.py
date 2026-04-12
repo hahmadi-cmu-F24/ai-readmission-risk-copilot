@@ -27,26 +27,24 @@ Requirements:
 - do not include any extra keys
 - do not wrap the JSON in code fences
 
-Input:
-{
-  "patient_age": "{patient_age}",
-  "patient_sex": "{patient_sex}",
-  "prior_admissions_12m": "{prior_admissions_12m}",
-  "length_of_last_stay": "{length_of_last_stay}",
-  "comorbidity_count": "{comorbidity_count}",
-  "diabetes": "{diabetes}",
-  "hypertension": "{hypertension}",
-  "discharge_disposition": "{discharge_disposition}",
-  "follow_up_scheduled": "{follow_up_scheduled}",
-  "medication_adherence_risk": "{medication_adherence_risk}",
-  "clinical_note": "{clinical_note}",
-  "risk_score": "{risk_score}",
-  "risk_level": "{risk_level}"
-}
+Patient data:
+patient_age: {patient_age}
+patient_sex: {patient_sex}
+prior_admissions_12m: {prior_admissions_12m}
+length_of_last_stay: {length_of_last_stay}
+comorbidity_count: {comorbidity_count}
+diabetes: {diabetes}
+hypertension: {hypertension}
+discharge_disposition: {discharge_disposition}
+follow_up_scheduled: {follow_up_scheduled}
+medication_adherence_risk: {medication_adherence_risk}
+clinical_note: {clinical_note}
+risk_score: {risk_score}
+risk_level: {risk_level}
 """
 
 
-def build_prompt(payload: PatientAssessmentRequest, risk_score: float, risk_level: str) -> str:
+def build_prompt(payload, risk_score, risk_level):
     return PROMPT_TEMPLATE.format(
         patient_age=payload.age,
         patient_sex=payload.sex.value,

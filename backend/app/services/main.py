@@ -11,9 +11,8 @@ from app.schemas import (
     PatientAssessmentRequest,
     PatientAssessmentResponse,
 )
-from app.services.autoai_service import mock_call_autoai
 from app.services.prompt_service import build_prompt, mock_call_prompt_lab, validate_prompt_output
-
+from app.services.autoai_service import call_autoai_model
 
 app = FastAPI(
     title="Heart Failure Readmission Copilot API",
@@ -44,9 +43,9 @@ def health() -> dict[str, str]:
         502: {"model": ErrorResponse},
     },
 )
-def assess(payload: PatientAssessmentRequest) -> PatientAssessmentResponse:
+async def assess(payload: PatientAssessmentRequest) -> PatientAssessmentResponse:
     try:
-        autoai_result = mock_call_autoai(payload)
+        autoai_result = await call_autoai_model(payload)
         risk_score = float(autoai_result["risk_score"])
         risk_level = str(autoai_result["risk_level"])
 
