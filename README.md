@@ -11,6 +11,9 @@ This project demonstrates an end-to-end AI system:
 - Build a backend service with **FastAPI**
 - Generate structured explanations for predictions
 
+## 🎥 Demo
+https://youtu.be/Iv25UDShWL4
+
 ## 🧠 Architecture
 User Input
 ↓
